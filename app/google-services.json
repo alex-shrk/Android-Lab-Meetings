@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "521388651506",
+    "firebase_url": "https://mettings-53881.firebaseio.com",
+    "project_id": "mettings-53881",
+    "storage_bucket": "mettings-53881.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521388651506:android:c1ef50d9c24404d0",
+        "android_client_info": {
+          "package_name": "ru.ssau.sanya.mettings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521388651506-hi073397aogd944mn41li3i9m5lmploo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.ssau.sanya.mettings",
+            "certificate_hash": "d830ce5ab59d3349037f9eb1f0955b22abb757eb"
+          }
+        },
+        {
+          "client_id": "521388651506-vij3ke5cs92sv167drs5nofj90cuuprc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyM3e0UIGga-BvbjkuxjLo3X2NBTBuJMM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521388651506-vij3ke5cs92sv167drs5nofj90cuuprc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

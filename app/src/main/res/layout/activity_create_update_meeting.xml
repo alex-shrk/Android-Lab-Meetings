@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="ru.ssau.sanya.mettings.CreateUpdateMeetingActivity">
+
+        <TextView
+            android:id="@+id/meetingNameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meetingnameview" />
+
+        <EditText
+            android:id="@+id/meetingNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/meetingNameView"
+            android:layout_marginTop="20dp"
+             />
+
+        <TextView
+            android:id="@+id/meetingDescrView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meetingdescrview"
+            android:layout_below="@id/meetingNameEdit"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/meetingDescrEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_below="@id/meetingDescrView"
+            android:layout_marginTop="20dp"
+             />
+
+
+
+
+        <TextView
+            android:id="@+id/startDateMeetingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/startdatemeeting"
+            android:layout_below="@id/meetingDescrEdit"
+            android:layout_marginTop="20dp"
+             />
+
+        <TextView
+            android:id="@+id/startDateMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/startdate"
+            android:textColor="#3b978d"
+            android:textSize="20sp"
+            android:layout_below="@id/startDateMeetingView"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/startTimeMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/startDateMeeting"
+            android:layout_alignBottom="@+id/startDateMeeting"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="193dp"
+            android:hint="@string/starttime"
+            android:textColor="#3b978d"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/endTimeMeetingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/endtimemeeting"
+            android:layout_below="@id/startTimeMeeting"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/endDateMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enddate"
+            android:textColor="#3b978d"
+            android:textSize="20sp"
+            android:layout_below="@id/endTimeMeetingView"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/endTimeMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/endDateMeeting"
+            android:layout_alignBottom="@+id/endDateMeeting"
+            android:layout_alignStart="@+id/startTimeMeeting"
+            android:hint="@string/endtime"
+            android:textColor="#3b978d"
+            android:textSize="20sp" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/priorityMeetingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prioritymeetingview"
+            android:layout_below="@id/endTimeMeeting"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/priorityVariants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/priority_list"
+            android:layout_below="@id/priorityMeetingView"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnCreateNewMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|bottom|center_horizontal|center"
+            android:text="@string/ok"
+            android:layout_below="@id/priorityVariants"
+            android:layout_marginTop="20dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>

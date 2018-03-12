@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Встречи</string>
+    <string name="title_activity_login">Войти в систему</string>
+    <string name="prompt_email">Почта</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Войти или зарегистрироваться</string>
+    <string name="action_sign_in_short">Войти</string>
+    <string name="error_invalid_email">Неверный ящик</string>
+    <string name="error_invalid_password">Пароль слишком короткий</string>
+    <string name="error_incorrect_password">Некорректный пароль</string>
+    <string name="error_field_required">Заполните все поля</string>
+    <string name="password_hint">Пароль</string>
+    <string name="email_hint">Ящик</string>
+    <string name="sign_up_button_label">Зарегистрироваться</string>
+    <string name="signup_error_message">Пожалуйста, заполните все поля для регистрации</string>
+    <string name="signup_error_title">Ошибка</string>
+    <string name="signup_success">Аккаунт создан. Вы можете войти</string>
+    <string name="login_error_message">Введите логин и пароль</string>
+    <string name="login_error_title">Ошибка</string>
+    <string name="login_button_label">Войти</string>
+    <string name="sign_up_text">Зарегистрироваться!</string>
+    <string name="add_item">Добавить новый элемент</string>
+    <string name="action_logout">Выйти из системы</string>
+    <string name="ok">Ок</string>
+    <string name="accept_action">Подтвердите действие</string>
+    <string name="accept_add_new_meeting">Добавить новую встречу?</string>
+    <string name="accept_update_meeting">Обновить встречу?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="select_time">Выберите время</string>
+    <string name="fio_hint">ФИО</string>
+    <string name="pos_hint">Должность</string>
+    <string name="title_activity_about_meeting">Подробная информация</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_delete_meeting">Удалить встречу</string>
+    <string name="action_update_meeting">Обновить встречу</string>
+    <string name="action_search_by_descr">Поиск по описанию</string>
+
+    <string-array name="priority_list">
+        <item>Срочная</item>
+        <item>Плановая</item>
+        <item>По возможности</item>
+
+    </string-array>
+
+
+    <string name="meetingDescription">Описание встречи</string>
+    <string name="startdatemeeting">Дата начала</string>
+    <string name="enddatemeeting">Дата конца</string>
+    <string name="prioritymeetingview">Приоритет</string>
+    <string name="members_in_meeting">Участники встречи</string>
+    <string name="meetingnameview">Название</string>
+    <string name="meetingdescrview">Описание</string>
+    <string name="startdate">Дата начала</string>
+    <string name="starttime">Время начала</string>
+    <string name="endtimemeeting">Время окончания</string>
+    <string name="enddate">Дата окончания</string>
+    <string name="endtime">Время окончания</string>
+    <string name="msg_meeting_updated">Встреча обновлена</string>
+    <string name="new_meeting_title">Новая встреча</string>
+    <string name="new_meeting_text">новая встреча</string>
+    <string name="save_to_csv">Сохранить встречи в .csv файл</string>
+    <string name="root_path_csv">Папка для csv файла</string>
+    <string name="csv_file_name">Имя csv файла</string>
+    <string name="save">Сохранить</string>
+    <string name="internet_connection_not_available">Интернет соединение недоступно. Работа в оффлайн режиме. Как только соединение появится, все заработает само</string>
+    <string name="meeting_saved">Встречи сохранены в:</string>
+    <string name="cancel">Отмена</string>
+    <string name="enter_csv_name">Введите имя csv файла</string>
+    <string name="enter_csv_path">Введите путь до файла</string>
+    <string name="enter_path_here">Путь до файла</string>
+    <string name="enter_name_here">Имя файла</string>
+    <string name="msg_fill_all_fields">Пожалуйста, заполните все поля</string>
+    <string name="meeting_save_failed">Встреча сохранена неуспешно</string>
+    <plurals name="plurals_meeting_counts">
+        <item quantity="zero">Нет новых встреч</item>
+        <item quantity="one">%1$d новая встреча</item>
+        <item quantity="two">%1$d новые встречи</item>
+        <item quantity="few">%1$d новые встречи</item>
+        <item quantity="many">%1$d новых встреч</item>
+        <item quantity="other">%1$d новых встреч</item>
+    </plurals>
+</resources>

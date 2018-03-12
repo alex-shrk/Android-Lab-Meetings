@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/activity_about_meeting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="ru.ssau.sanya.mettings.AboutMeetingActivity">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_about_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_accept_meeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+
+        >
+
+
+        <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="@dimen/text_margin"
+                 android:text="@string/large_text" />-->
+
+        <!--<TextView
+                android:id="@+id/about_meetingNameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/about_meetingName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/about_meetingNameView"
+                />-->
+
+
+        <TextView
+            android:id="@+id/about_meetingDescrView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/meetingDescription" />
+
+        <TextView
+            android:id="@+id/about_meetingDescr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_meetingDescrView"
+            android:layout_marginTop="10dp"
+            android:textColor="#3b978d"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/about_startDateMeetingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_meetingDescr"
+            android:layout_marginTop="10dp"
+            android:text="@string/startdatemeeting" />
+
+        <TextView
+            android:id="@+id/about_startDateMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/about_startDateMeetingView"
+            android:layout_marginTop="10dp"
+            android:textColor="#3b978d"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/about_startTimeMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/about_startDateMeeting"
+            android:layout_alignBottom="@+id/about_startDateMeeting"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="195dp"
+            android:textColor="#3b978d"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/about_endTimeMeetingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_startTimeMeeting"
+            android:layout_marginTop="10dp"
+            android:text="@string/enddatemeeting" />
+
+        <TextView
+            android:id="@+id/about_endDateMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/about_endTimeMeetingView"
+            android:layout_marginTop="10dp"
+            android:textColor="#3b978d"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/about_endTimeMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/about_endDateMeeting"
+            android:layout_alignBottom="@+id/about_endDateMeeting"
+            android:layout_alignStart="@+id/about_startTimeMeeting"
+            android:textColor="#3b978d"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/about_priorityMeetingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_endTimeMeeting"
+            android:layout_marginTop="10dp"
+            android:text="@string/prioritymeetingview" />
+
+        <TextView
+            android:id="@+id/about_priorityMeeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/about_endTimeMeeting"
+            android:layout_alignTop="@+id/about_priorityMeetingView"
+            android:textColor="#3b978d"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/about_membersMeetingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_priorityMeeting"
+            android:layout_marginTop="10dp"
+            android:text="@string/members_in_meeting" />
+
+        <ListView
+            android:id="@+id/about_list_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_membersMeetingView"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical">
+
+        </ListView>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
